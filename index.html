@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Reproductor -->
+    <main class="player">
+
+        <!-- Título -->
+        <div class="title-container"> 
+            <h1 class="title" id="trackName"></h1>
+        </div> 
+
+        <!-- Carátula -->
+        <img src="" alt="" class="cover" id="albumCover">
+
+        <!-- Elemento de Audio HTML Media -->
+        <audio src="" id="musicPlayer"></audio>
+
+        <!-- Barra de progreso -->
+        <div id="progress-container" class="progress-container">
+            <section id="progressBar" class="progress"></section>
+        </div>
+
+        <!-- Controles -->
+        <section class="controls">
+            <button class="prev">
+                <i id="previousButton" class="fas fa-backward"></i>
+            </button>
+            <button class="play-pause">
+                <i id="playButton" class="fas fa-play"></i>
+                <i id="pauseButton" class="fas fa-pause" style="display: none;"></i>
+            </button>
+            <button class="next">
+                <i id="nextButton" class="fas fa-forward"></i>
+            </button>
+        </section>
+
+        <!-- Lista de canciones -->
+        <ul class="songs" id="trackList">
+        </ul>
+    </main>
+</body>
+
+</html>
